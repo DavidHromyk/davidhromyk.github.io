@@ -8,13 +8,12 @@ comments: true
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-**Here goes nothing!**
-
-### Prerequisites 
+### __Prerequisites__
 
 In order for this setup to work there are a few prereqesuites that need to be met. 
 
 * An Ubuntu 18.04 server on [Digital Ocean](https://www.digitalocean.com/)
+* Integration with [Slack's API](https://api.slack.com/)
 
 
 How about a yummy crepe?
