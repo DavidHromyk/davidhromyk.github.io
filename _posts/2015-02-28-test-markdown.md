@@ -1,27 +1,20 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: Slack automation with Jenkins
+subtitle: Automate slack messages with Jenkins builds
+tags: [Slack]
 comments: true
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-**Here is some bold text**
+**Here goes nothing!**
 
-## Here is a secondary heading
+### Prerequisites 
 
-Here's a useless table:
+In order for this setup to work there are a few prereqesuites that need to be met. 
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+* An Ubuntu 18.04 server on [Digital Ocean](https://www.digitalocean.com/)
 
 
 How about a yummy crepe?
