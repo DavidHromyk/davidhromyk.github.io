@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Slack automation with Jenkins
+title: Slack Automation With Jenkins
 subtitle: Automate slack messages with Jenkins builds
 tags: [Slack]
 comments: true
 ---
 
-![Crepe](http://inn.spb.ru/images/100/DSC100139148.jpg)
+![Tech](http://inn.spb.ru/images/100/DSC100139148.jpg)
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
@@ -17,7 +17,7 @@ In order for this setup to work there are a few prereqesuites that need to be me
 * An Ubuntu 18.04 server hosted on [Digital Ocean](https://www.digitalocean.com/products/droplets/)
 * PowerShell integration with [Slack's REST API](https://api.slack.com/)
 * [A Jenkins server](https://jenkins.io/)
-* A [PowerShell Core](https://github.com/PowerShell/PowerShell) installation
+* A [PowerShell Core](https://github.com/PowerShell/PowerShell) installation on the Ubuntu 18.04 server.
 
 Here's a code chunk:
 
