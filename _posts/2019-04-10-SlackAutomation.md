@@ -130,6 +130,105 @@ You should now have Jenkins and all of its dependencies installed on your system
 
 #### Starting Jenkins
 
+Let's go ahead and start Jenkins using `systemctl`:
+
+```bash
+$ sudo systemctl start jenkins
+```
+
+If you want to get a better picture of the jenkins startup run:
+
+```bash
+$ sudo systemctl status jenkins
+```
+
+If everything went well, the beginning of the output should show that the service is active and configured to start at boot:
+
+```bash
+jenkins.service - LSB: Start Jenkins at boot time
+Loaded: loaded (/etc/init.d/jenkins; generated)
+Active: active (exited) since Mon 2018-07-09 17:22:08 UTC; 6min ago
+Docs: man:systemd-sysv-generator(8)
+Tasks: 0 (limit: 1153)
+CGroup: /system.slice/jenkins.service
+```
+
+#### Open Up The Firewall
+
+By defaul Jenkins runs on port 8080, so we will need to go ahead and open that port up using `ufw`. Simply run:
+
+```bash
+$ sudo ufw allow 8080
+```
+
+Check the `ufw`'s status to confirm the new rules are setup properly:
+
+```bash
+$ sudo ufw status
+```
+
+You should see that traffic is allowed fomr port `8080` anywhere.
+
+```bash
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+8080                       ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+8080 (v6)                  ALLOW       Anywhere (v6)
+```
+
+Now that Jenkins is installed and the firewall is open we can go ahead and complete our final setup.
+
+#### Setting Up Jenkins With the GUI
+
+To complete our setup we can visit `http://your_server_ip_or_domain:8080`
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1604/unlock-jenkins.png)
+
+We can retrieve our defaul password using the `cat` command in the terminal. It will look something like this:
+
+```bash
+$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+Copy the 32-character alphanumeric password from the terminal and paste it into the Administrator password field, then click Continue.
+
+The next screen will give you the option of installing suggested plugins or selecting the plugins to install. I went with the suggested plugins, although it would be good to also have the PowerShell plugin installed later on.
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/customize_jenkins_screen_two.png)
+
+We'll click the Install suggested plugins option, which will immediately begin the installation process:
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_plugin_install_two.png)
+
+When the installation is complete, you will be prompted to set up the first administrative user. It's possible to skip this step and continue as admin using the initial password we used above, but we'll take a moment to create the user.
+
+Below you can create a username and add your full name as well as an email.
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_create_user.png)
+
+You will see an Instance Configuration page that will ask you to confirm the preferred URL for your Jenkins instance. Confirm either the domain name for your server or your server's IP address:
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/instance_confirmation.png)
+
+After confirming the appropriate information, click Save and Finish. You will see a confirmation page confirming that "Jenkins is Ready!"
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_ready_page_two.png)
+
+Click Start using Jenkins to visit the main Jenkins dashboard.
+
+![Jenkins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_home_page.png)
+
+We have successfully setup our Jenkins server!
+
+
+
+
+
+
 
 
 
