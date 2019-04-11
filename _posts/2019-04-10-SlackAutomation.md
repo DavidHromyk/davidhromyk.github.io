@@ -68,7 +68,7 @@ ssh-copy-id demo@198.51.100.0
 
 You may need to login to the server via the VNC that Digital Ocean provides and allow password authentication in order to copy over the public key. Make sure you also own the `.ssh` directory. Once that is complete you should be able to login via SSH into your server. Go ahead and get familiar with some basic [Linux commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners) once you are logged in if you haven't played around with Linux before.
 
-## __Setup Your Jenkins Server__
+## Setup Your Jenkins Server
 
 Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins build server. If you aren't familiar with Jenkins, Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery. If you would like to know more about Jenkins here is their [user documentation](https://jenkins.io/doc/) page.
 
@@ -101,7 +101,7 @@ OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
 ```
 
 
-#### Installing Jenkins
+### Installing Jenkins
 
 The version of Jenkins included with the default Ubuntu packages is often behind the latest available version from the project itself. To take advantage of the latest fixes and features, you can use the project-maintained packages to install Jenkins.
 
