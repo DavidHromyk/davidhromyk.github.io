@@ -27,6 +27,8 @@ Digital Ocean has great resources, tutorials, and artiles for diving right into 
 
 If you haven't setup a Linux server of any sort before here is a good article to get you started setting up your [Ubuntu 18.04 server](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04).
 
+#### Setup SSH
+
 The first thing we want to do once our server is provisioned is setup SSH. If you are using Windows you can either install PuTTY or a Linux Distro from the Windows Store. For this tutorial I used Ubuntu, but other distribution should work. If you are on a Mac you can just use terminal to SSH.
 
 We will want to generate an SSH keypair that we can use to login to our server.
