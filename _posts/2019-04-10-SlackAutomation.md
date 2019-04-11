@@ -18,7 +18,7 @@ In order for this setup to work there are a few prereqesuites that need to be me
 
 How about a yummy crepe?
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Crepe](http://inn.spb.ru/images/100/DSC100139148.jpg)
 
 Here's a code chunk:
 
