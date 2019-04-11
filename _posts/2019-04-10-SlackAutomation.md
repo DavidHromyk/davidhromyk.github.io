@@ -25,7 +25,7 @@ Digital Ocean has great resources, tutorials, and artiles for diving right into 
 
 #### Initial Server Setup
 
-If you haven't setup a Linux server of any sort before here is a good article to get you started https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04.
+If you haven't setup a Linux server of any sort before here is a good article to get you started setting up your [Ubuntu 18.04 server](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04).
 
 The first thing we want to do once our server is provisioned is setup SSH. If you are using Windows you can either install PuTTY or a Linux Distro from the Windows Store. For this tutorial I used Ubuntu, but other distribution should work. If you are on a Mac you can just use terminal to SSH.
 
@@ -64,7 +64,7 @@ Lastly we will need to copy the SSH key over to our Ubuntu server.
 ssh-copy-id demo@198.51.100.0
 ```
 
-You should now be able to SSH into your Ubuntu server.
+You may need to login to the server via the VNC that Digital Ocean provides and allow password authentication in order to copy over the public key. Make sure you also own the `.ssh` directory. Once that is complete you should be able to login via SSH into your server. Go ahead and get familiar with some basic [Linux commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners) once you are logged in if you haven't played around with Linux before.
 
 
 
