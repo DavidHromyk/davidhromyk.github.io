@@ -10,7 +10,7 @@ comments: true
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-### __Prerequisites__
+## __Prerequisites__
 
 In order for this setup to work there are a few prereqesuites that need to be met. I will go ahead and lay them out below and then walk you through a step by step process later on in this article.
 
@@ -19,7 +19,7 @@ In order for this setup to work there are a few prereqesuites that need to be me
 * [A Jenkins server](https://jenkins.io/)
 * A [PowerShell Core](https://github.com/PowerShell/PowerShell) installation on the Ubuntu 18.04 server.
 
-### Setup Your Ubuntu 18.04 Server
+## Setup Your Ubuntu 18.04 Server
 
 Digital Ocean has great resources, tutorials, and artiles for diving right into different subjects you may be interested in. I would recommend checking some of them out. For this setup I used an Ubuntu 18.04 server with about 25 GB of disk space and 1 GB of memory. Below I will outline my server setup.
 
@@ -68,7 +68,7 @@ ssh-copy-id demo@198.51.100.0
 
 You may need to login to the server via the VNC that Digital Ocean provides and allow password authentication in order to copy over the public key. Make sure you also own the `.ssh` directory. Once that is complete you should be able to login via SSH into your server. Go ahead and get familiar with some basic [Linux commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners) once you are logged in if you haven't played around with Linux before.
 
-### __Setup Your Jenkins Server__
+## __Setup Your Jenkins Server__
 
 Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins build server. If you aren't familiar with Jenkins, Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery. If you would like to know more about Jenkins here is their [user documentation](https://jenkins.io/doc/) page.
 
