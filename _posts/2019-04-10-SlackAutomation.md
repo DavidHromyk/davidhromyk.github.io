@@ -14,7 +14,7 @@ So here goes my first tutorial blog. Recently I had the idea to automate sending
 
 In order for this setup to work there are a few prereqesuites that need to be met. 
 
-* An Ubuntu 18.04 server on [Digital Ocean](https://www.digitalocean.com/)
+* An Ubuntu 18.04 server on [Digital Ocean](https://www.digitalocean.com/products/droplets/)
 * Integration with [Slack's API](https://api.slack.com/)
 
 Here's a code chunk:
