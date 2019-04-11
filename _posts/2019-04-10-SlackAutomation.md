@@ -77,6 +77,7 @@ Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins bui
 * An Ubuntu 18.04 server which we installed in the previous section.
 * Java 8 installed, which we will outline below.
 
+We will begin with our Java 8 install.
 
 #### Installing Java 8
 
@@ -100,6 +101,8 @@ OpenJDK Runtime Environment (build 1.8.0_162-8u162-b12-1-b12)
 OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
 
 ```
+
+Now that we have installed Java we can move on to installing Jenkins.
 
 #### Installing Jenkins
 
@@ -155,10 +158,12 @@ Tasks: 0 (limit: 1153)
 CGroup: /system.slice/jenkins.service
 ```
 
+Now that our Jenkins service is active let's open up the firewall.
+
 
 #### Open Up The Firewall
 
-By defaul Jenkins runs on port 8080, so we will need to go ahead and open that port up using `ufw`. Simply run:
+By default Jenkins runs on port 8080, so we will need to go ahead and open that port up using `ufw`. Simply run:
 
 ```bash
 $ sudo ufw allow 8080
