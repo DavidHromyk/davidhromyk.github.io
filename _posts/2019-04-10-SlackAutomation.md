@@ -68,6 +68,70 @@ ssh-copy-id demo@198.51.100.0
 
 You may need to login to the server via the VNC that Digital Ocean provides and allow password authentication in order to copy over the public key. Make sure you also own the `.ssh` directory. Once that is complete you should be able to login via SSH into your server. Go ahead and get familiar with some basic [Linux commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners) once you are logged in if you haven't played around with Linux before.
 
+### __Setup Your Jenkins Server__
+
+Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins build server. If you aren't familiar with Jenkins, Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery. If you would like to know more about Jenkins here is their [user documentation](https://jenkins.io/doc/) page.
+
+#### Prerequisites
+
+* An Ubuntu 18.04 server which we installed in the previous section.
+* Java 8 installed, which we will outline below.
+
+#### Installing Java 8
+
+Java 8 is the current Long Term Support version and is still widely supported, though public maintenance ends in January 2019. To install OpenJDK 8, execute the following command:
+
+```bash
+$ sudo apt install openjdk-8-jdk
+```
+
+Verify that it is installed with:
+
+```bash
+$ java -version
+```
+
+You should then see the following output:
+
+```bash
+openjdk version "1.8.0_162"
+OpenJDK Runtime Environment (build 1.8.0_162-8u162-b12-1-b12)
+OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
+```
+
+#### Installing Jenkins
+
+The version of Jenkins included with the default Ubuntu packages is often behind the latest available version from the project itself. To take advantage of the latest fixes and features, you can use the project-maintained packages to install Jenkins.
+
+First we need to add the repository key to the system. I wasn't able to get this to work with Digital Ocean's VNC, but I was able to get it working with SSH from my client machine:
+
+```bash
+$ wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+```
+
+When the key is added, the system will return OK. Next, append the Debian package repository address to the server's `sources.list`:
+
+```
+$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
+```
+
+When both of these are completed we will need to update `apt` so that `apt` will use the new repository. Simply run:
+```bash
+$ sudo apt update 
+```
+
+The final step is to install Jenkins. Finally we made it! This can be done by running the following:
+
+```bash
+$ sudo apt install jenkins
+```
+
+You should now have Jenkins and all of its dependencies installed on your system. Next we will need to start the Jenkins server.
+
+#### Starting Jenkins
+
+
+
 
 
 
