@@ -77,6 +77,7 @@ Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins bui
 * An Ubuntu 18.04 server which we installed in the previous section.
 * Java 8 installed, which we will outline below.
 
+
 #### Installing Java 8
 
 Java 8 is the current Long Term Support version and is still widely supported, though public maintenance ends in January 2019. To install OpenJDK 8, execute the following command:
@@ -98,6 +99,7 @@ openjdk version "1.8.0_162"
 OpenJDK Runtime Environment (build 1.8.0_162-8u162-b12-1-b12)
 OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
 ```
+
 
 #### Installing Jenkins
 
@@ -152,6 +154,7 @@ Docs: man:systemd-sysv-generator(8)
 Tasks: 0 (limit: 1153)
 CGroup: /system.slice/jenkins.service
 ```
+
 
 #### Open Up The Firewall
 
