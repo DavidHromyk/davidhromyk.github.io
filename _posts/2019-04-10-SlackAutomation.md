@@ -14,8 +14,10 @@ So here goes my first tutorial blog. Recently I had the idea to automate sending
 
 In order for this setup to work there are a few prereqesuites that need to be met. I will go ahead and lay them out below and then walk you through a step by step process later on in this article.
 
-* An Ubuntu 18.04 server on [Digital Ocean](https://www.digitalocean.com/products/droplets/)
-* Integration with [Slack's API](https://api.slack.com/)
+* An Ubuntu 18.04 server hosted on [Digital Ocean](https://www.digitalocean.com/products/droplets/)
+* PowerShell integration with [Slack's REST API](https://api.slack.com/)
+* [A Jenkins server](https://jenkins.io/)
+* A [PowerShell Core](https://github.com/PowerShell/PowerShell) installation
 
 Here's a code chunk:
 
