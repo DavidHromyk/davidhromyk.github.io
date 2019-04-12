@@ -312,7 +312,7 @@ team_id      : 48483DJFH
 Go ahead and store your `access_token` somewhere safe as we will need it in the next step.
 
 
-
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
 
 
 
