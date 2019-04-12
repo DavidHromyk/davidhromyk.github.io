@@ -274,6 +274,29 @@ That will open up a browser and show the following:
 
 ![Slack](https://i.imgur.com/w8R56zS.png)
 
+We will want to click **Authorize**.
+
+Once we authorize our app we will be redirected to our `redirect_url` which in my case is `https://davidhromyk.github.io`. The URL will look like this:
+
+```
+https://davidhromyk.github.io/?code=$code&state=
+```
+
+Grab the portion beginning with code. At this point we will want to run `Invoke-RestMethod` which is PowerShell's way of working with REST API's. We can finally grab a token by running. 
+
+```powershell
+Invoke-RestMethod -Method Post -Uri "https://slack.com/api/oauth.access?client_id=$clientID&client_secret=$clientsecret&redirect_url=https://davidhromyk.github.io&code=$code&state=" 
+```
+
+Fill in the URL with the appropriate information.
+
+
+
+
+
+
+
+
 
 
 #### Install PowerShell Core
