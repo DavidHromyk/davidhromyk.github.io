@@ -290,6 +290,22 @@ Invoke-RestMethod -Method Post -Uri "https://slack.com/api/oauth.access?client_i
 
 Fill in the URL with the appropriate information.
 
+Once we run the `Invoke-RestMethod` command above we should receive back a `JSON` file with our token! It should look like this:
+
+```powershell
+ok           : True
+access_token : xoxp-23984754863-2348975623103
+               e647759627
+scope        : read,admin,identify,bot,commands,incoming-webhook,chat:write:use
+               r
+user_id      : 8958GUERN
+team_name    : Paradise Leaders
+team_id      : 48483DJFH
+```
+
+Go ahead and store your access_token somewhere safe as we will need it in the next step.
+
+
 
 
 
