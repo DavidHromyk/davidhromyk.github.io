@@ -250,9 +250,9 @@ We have successfully setup our Jenkins server!
 
 ## Integration With Slack's API
 
-#### Prerequisites
+So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. What is [Slack](https://slack.com/)? Slack is a collaboration hub/chat system for work and groups to meet and collaborate. Go ahead and read through the Slack API documentation I linked in the initial prereqs.
+#### Prerequisites
 
 * PowerShell Core/PowerShell 6
 * A Slack OAuth token
