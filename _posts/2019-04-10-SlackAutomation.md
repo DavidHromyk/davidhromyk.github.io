@@ -10,7 +10,9 @@ comments: true
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-**Contents**
+### Contents
+{: .no_toc}
+
 * TOC
 {:toc .red}
 
