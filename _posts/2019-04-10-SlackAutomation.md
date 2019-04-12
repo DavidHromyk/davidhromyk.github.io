@@ -147,6 +147,16 @@ If you want to get a better picture of the jenkins startup run:
 $ sudo systemctl status jenkins
 ```
 
+You may notice an error if the wrong Java version is active. For me I noticed Java 11 was the active Java version and Jenkins needs Java 8 to work. You may receive the following error on Jenkins startup:
+
+{: .box-error}
+**Error:** ● jenkins.service - LSB: Start Jenkins at boot time
+   Loaded: loaded (/etc/init.d/jenkins; generated)
+   Active: failed (Result: exit-code) since Fri 2019-04-12 15:02:01 UTC; 11s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 18441 ExecStop=/etc/init.d/jenkins stop (code=exited, status=1/FAILURE)
+  Process: 18479 ExecStart=/etc/init.d/jenkins start (code=exited, status=1/FAILURE)
+
 If everything went well, the beginning of the output should show that the service is active and configured to start at boot:
 
 ```bash
