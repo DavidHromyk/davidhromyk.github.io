@@ -10,7 +10,7 @@ comments: true
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-**Table of Contents**
+**Contents**
 * TOC
 {:toc}
 
@@ -76,7 +76,7 @@ You may need to login to the server via the VNC that Digital Ocean provides and 
 
 Next we will install Jenkins on our Ubuntu server and turn it into a Jenkins build server. If you aren't familiar with Jenkins, Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery. If you would like to know more about Jenkins here is their [user documentation](https://jenkins.io/doc/) page.
 
-#### Prerequisites
+#### Jenkins Prerequisites
 
 * An Ubuntu 18.04 server which we installed in the previous section.
 * Java 8 installed, which we will outline below.
@@ -252,7 +252,7 @@ We have successfully setup our Jenkins server!
 
 Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. What is [Slack](https://slack.com/)? Slack is a collaboration hub/chat system for work and groups to meet and collaborate. Go ahead and read through the Slack API documentation I linked in the initial prereqs.
 
-#### Prerequisites
+#### Slack API Prerequisites
 
 * PowerShell Core/PowerShell 6
 * A Slack OAuth token
