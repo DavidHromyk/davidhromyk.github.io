@@ -12,7 +12,6 @@ So here goes my first tutorial blog. Recently I had the idea to automate sending
 
 **Contents**
 * TOC
-
 {: .toc .red}
 
 ## Prerequisites
