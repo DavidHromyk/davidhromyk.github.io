@@ -10,11 +10,11 @@ comments: true
 
 So here goes my first tutorial blog. Recently I had the idea to automate sending slack messages once a week without my intervation. I figured it would be great if I could laissez-faire my Slack account and let my automation work wonders.
 
-## Table of Contents
+**Table of Contents**
 * TOC
 {:toc}
 
-## __Prerequisites__
+## Prerequisites
 
 In order for this setup to work there are a few prereqesuites that need to be met. I will go ahead and lay them out below and then walk you through a step by step process later on in this article.
 
