@@ -246,7 +246,15 @@ We have successfully setup our Jenkins server!
 
 ## Integration With Slack's API
 
+#### Prerequisites
+
+* PowerShell Core/PowerShell 6
+* A Slack OAuth token
+* A Slack [PowerShell module](https://github.com/RamblingCookieMonster/PSSlack)
+
 Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. What is [Slack](https://slack.com/)? Slack is a collaboration hub/chat system for work and groups to meet and collaborate. 
+
+#### Grab An OAuth2 Token
 
 To make this happen we will need to use OAuth which is a whole activity in and of itself. If you aren't familiar with OAuth here is a great [PowerShell/OAuth](https://foxdeploy.com/2015/11/02/using-powershell-and-oauth/) article to get you started.
 
@@ -254,7 +262,19 @@ Here is how the OAuth flow works:
 
 ![Slack](https://a.slack-edge.com/bfaba/img/api/slack_oauth_flow_diagram@2x.png)
 
-PowerShell is where we are going to make the magic happen. If you need a rundown on PowerShell you can get a quick [PowerShell Introduction](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6) by reading through Microsoft's documentation.
+To grab a token we will  need to use PowerShell with a browser. This is not done with our Ubuntu server. We can begin the process by running:
+
+```powershell
+Invoke-WebRequest "https://slack.com/oauth/authorize?client_id=$clientID&scope=admin&redirect_url=https://davidhromyk.github.io"
+```
+
+
+
+
+
+#### Install PowerShell Core
+
+PowerShell is where we are going to make the magic happen. If you need a rundown on PowerShell you can get a quick [PowerShell Introduction](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6) by reading through Microsoft's documentation. On the client side I used PowerShell 5 for testing purposes, but we will need to use PowerShell Core in production since we are running PowerShell on Ubuntu 18.04
 
 
 
