@@ -317,7 +317,7 @@ Go ahead and store your `access_token` somewhere safe as we will need it in the 
 
 #### Install PowerShell Core
 
-[Name of Link]({{ https://github.com/DavidHromyk/davidhromyk.github.io/blob/master/_posts/2019-04-10-SlackAutomation.md#setup-your-jenkins-server }}{% post_url 2019-04-10-SlackAutomation.md %})
+[Name of Link]({{ site.baseurl }}{% post_url 2019-04-10-SlackAutomation.md#integration-with-slacks-api %})
 
 PowerShell is where we are going to make the magic happen. If you need a rundown on PowerShell you can get a quick [PowerShell Introduction](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6) by reading through Microsoft's documentation. On the client side I used PowerShell 5 for testing purposes, but we will need to use PowerShell Core in production since we are running PowerShell on Ubuntu 18.04
 
