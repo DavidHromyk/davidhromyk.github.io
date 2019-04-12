@@ -270,6 +270,12 @@ Invoke-WebRequest "https://slack.com/oauth/authorize?client_id=$clientID&scope=a
 
 Fill in the above command with your `client_id`. I used my Blog site as my `redirect_url`. The [scope](https://api.slack.com/scopes) is the permission you will want to grant your app.
 
+That will open up a browser and show the following:
+
+![Slack](https://i.imgur.com/w8R56zS.png)
+
+
+
 #### Install PowerShell Core
 
 PowerShell is where we are going to make the magic happen. If you need a rundown on PowerShell you can get a quick [PowerShell Introduction](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6) by reading through Microsoft's documentation. On the client side I used PowerShell 5 for testing purposes, but we will need to use PowerShell Core in production since we are running PowerShell on Ubuntu 18.04
