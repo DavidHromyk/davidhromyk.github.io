@@ -303,7 +303,7 @@ team_name    : Paradise Leaders
 team_id      : 48483DJFH
 ```
 
-Go ahead and store your `access_toke` somewhere safe as we will need it in the next step.
+Go ahead and store your `access_token` somewhere safe as we will need it in the next step.
 
 
 
