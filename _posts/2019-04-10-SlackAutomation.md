@@ -151,7 +151,7 @@ You may notice an error if the wrong Java version is active. For me I noticed Ja
 
 {: .box-error}
 ```bash
-**Error:** ● jenkins.service - LSB: Start Jenkins at boot time
+ ● jenkins.service - LSB: Start Jenkins at boot time
    Loaded: loaded (/etc/init.d/jenkins; generated)
    Active: failed (Result: exit-code) since Fri 2019-04-12 15:02:01 UTC; 11s ago
      Docs: man:systemd-sysv-generator(8)
@@ -261,29 +261,4 @@ We have successfully setup our Jenkins server!
 
 
 
-And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
