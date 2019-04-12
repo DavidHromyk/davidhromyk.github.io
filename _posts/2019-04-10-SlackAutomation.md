@@ -162,12 +162,12 @@ You may notice an error if the wrong Java version is active. For me I noticed Ja
 If everything went well, the beginning of the output should show that the service is active and configured to start at boot:
 
 ```bash
-jenkins.service - LSB: Start Jenkins at boot time
-Loaded: loaded (/etc/init.d/jenkins; generated)
-Active: active (exited) since Mon 2018-07-09 17:22:08 UTC; 6min ago
-Docs: man:systemd-sysv-generator(8)
-Tasks: 0 (limit: 1153)
-CGroup: /system.slice/jenkins.service
+● jenkins.service - LSB: Start Jenkins at boot time
+   Loaded: loaded (/etc/init.d/jenkins; generated)
+   Active: active (exited) since Fri 2019-04-12 15:12:36 UTC; 3s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 18616 ExecStop=/etc/init.d/jenkins stop (code=exited, status=0/SUCCESS)
+  Process: 18691 ExecStart=/etc/init.d/jenkins start (code=exited, status=0/SUCCESS)
 ```
 
 Now that our Jenkins service is active let's open up the firewall.
