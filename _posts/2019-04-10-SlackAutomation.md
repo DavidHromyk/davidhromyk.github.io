@@ -248,7 +248,7 @@ We have successfully setup our Jenkins server!
 
 #### Prerequisites
 
-Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. What is [Slack](https://slack.com/)? Slack is a collaboration hub/chat system for work and groups to meet and collaborate. 
+Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. What is [Slack](https://slack.com/)? Slack is a collaboration hub/chat system for work and groups to meet and collaborate. Go ahead and read through the Slack API documentation I linked in the initial prereqs.
 
 * PowerShell Core/PowerShell 6
 * A Slack OAuth token
@@ -268,7 +268,7 @@ To grab a token we will  need to use PowerShell with a browser. This is not done
 Invoke-WebRequest "https://slack.com/oauth/authorize?client_id=$clientID&scope=admin&redirect_url=https://davidhromyk.github.io"
 ```
 
-Fill in the above command with your `client_id`. I used my Blog site as my `redirect_url`.
+Fill in the above command with your `client_id`. I used my Blog site as my `redirect_url`. The [scope](https://api.slack.com/scopes) is the permission you will want to grant your app.
 
 #### Install PowerShell Core
 
