@@ -244,6 +244,11 @@ Click Start using Jenkins to visit the main Jenkins dashboard.
 
 We have successfully setup our Jenkins server!
 
+## Integration With Slack's API
+
+Now we get to the fun stuff! We will be working with PowerShell and PowerShell's integration with Slack's API. To make this happen we will need to use OAuth which is a whole activity in and of itself. If you aren't familiar with OAuth here is a great [PowerShell/OAuth](https://foxdeploy.com/2015/11/02/using-powershell-and-oauth/) article to get you started.
+
+
 
 
 
